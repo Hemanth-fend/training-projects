@@ -33,12 +33,12 @@ function Routing() {
         <Nav.Item>
           <Nav.Link >
           <Link to='/Weather'> Weather </Link>
-            
           </Nav.Link>
         </Nav.Item>
+        
       </Nav>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' exact element={<Home/>} />
         <Route path='/Todo' element={<Todo/>} />
         <Route path='/Calculator' element={<Calculator/>} />
         <Route path='/Weather' element={<Weather/>} />        

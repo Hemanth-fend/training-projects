@@ -27,7 +27,7 @@ function Todo() {
         <Row>
           <Col>
             <Form.Control
-              readOnly = {false}
+              // readOnly = {false}
               type="text"
               id=""
               style={{ width: "45rem" }}
