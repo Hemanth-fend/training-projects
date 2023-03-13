@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Row, Col } from "react-bootstrap";
 import  './Calc.css';
+import Calculator2 from './Calculator2.webp'
 
 function Calculator() {
 
@@ -20,6 +22,9 @@ function Calculator() {
   return (
     <div style={{ margin: "50px" }}  className="container">
         <h1>Calculator App</h1>
+        <Row>
+           
+        <Col>
         <div className="calculator">
             <input type="text" name="screen" id="screen" value={result}/>
             <table>
@@ -55,6 +60,11 @@ function Calculator() {
                 </tr>
             </table>
         </div>
+        </Col>
+        {/* <Col>
+              <img src={Calculator2} alt="calculatorImage"  style={{width:"100%", marginTop:"auto"}}/>
+            </Col> */}
+        </Row>
     </div>
   )
 }

@@ -1,20 +1,35 @@
 import { TODO_ACTION_TYPES } from "../action-types/ActionTypes"
 
 export const AddTodoAction = (todo)=>{
-
-  return {type: TODO_ACTION_TYPES.ADD_TODO, payload: todo}
-
+  return {
+    type: TODO_ACTION_TYPES.ADD_TODO, 
+    payload: todo
+  }
 }
 
 
-export const RemoveTodoAction = (index)=>{
-
-  return {type: TODO_ACTION_TYPES.REMOVE_TODO, payload: index}
-  
+export const RemoveTodoAction = (id)=>{
+  return {
+    type: TODO_ACTION_TYPES.REMOVE_TODO,
+    payload: id
+  }
 }
 
 
-// export const EditTodoAction = (index) => {
+export const EditTodoAction = (id) => {
+  return {
+    type: TODO_ACTION_TYPES.EDIT_TODO, 
+    payload: id
+  }
+}
 
-//   return {type: TODO_ACTION_TYPES.EDIT_TODO , payload: index}
-// }
+
+export const updateTodoAction = (id, value) => {
+  return {
+    type: TODO_ACTION_TYPES.UPDATE_TODO,
+    payload: {
+      id :id,
+      value:value
+    }
+  };
+};
